@@ -15,11 +15,8 @@
 
     <link rel="stylesheet" href="{% static 'blog/main.css' %}">
 
-    {% if title %}
-        <title>{{ title }}</title>
-    {% else %}
-        <title>Django Blog</title>
-    {% endif %}
+    {% block title %}
+    {% endblock title %}
 
     {% block style %}
         <style>
